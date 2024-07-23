@@ -1,0 +1,7 @@
+.main {
+    height: 339px;    
+}
+
+.main.dark {
+    background-color: darkcyan;
+}

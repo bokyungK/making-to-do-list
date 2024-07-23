@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background-color: hotpink;
+}
+
+.header.dark {
+    background-color: cadetblue;
+}
+
+.imgWrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: unset;
+    padding-left: unset;
+    width: 180px;
+}
+
+.button {
+    background-color: unset;
+    border: unset;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.active {
+    text-decoration-line: underline;
+}
+
+.header.dark button {
+    color: white;
+}

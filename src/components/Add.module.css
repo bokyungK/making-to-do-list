@@ -1,0 +1,60 @@
+.section {
+    height: calc(15% - 10px);
+    padding: 10px;
+    background-color: darksalmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section.dark {
+    background-color: cornflowerblue;
+}
+
+.add {
+    width: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.input {
+    border: unset;
+    width: 80%;
+    padding-left: 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.section.dark .input {
+    background-color: gray;
+    color: white;
+}
+
+.section.dark .input::placeholder {
+    color: white;
+}
+
+.button {
+    border: unset;
+    width: 20%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #f5f5f5;
+}
+
+.section.dark .button {
+    background-color: darkgrey;
+    color: white;
+}
+
+.section.dark .button:hover {
+    background-color: #a0a0a0;
+}

@@ -1,0 +1,32 @@
+.section {
+    box-sizing: border-box;
+    height: calc(85% - 10px);
+    padding: 15px 10px;
+    overflow-y: auto;
+}
+
+.todo {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+
+.section.dark .todo {
+    color: white;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item input:checked + span {
+    text-decoration-line: line-through;
+}
