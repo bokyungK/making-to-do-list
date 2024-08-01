@@ -2,11 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 15px;
-    background-color: hotpink;
-}
-
-.header.dark {
-    background-color: cadetblue;
+    background-color: var(--color-header);
 }
 
 .imgWrap {
@@ -29,12 +25,9 @@
     border: unset;
     font-weight: bold;
     cursor: pointer;
+    color: var(--color-text);
 }
 
 .active {
     text-decoration-line: underline;
-}
-
-.header.dark button {
-    color: white;
 }

@@ -3,16 +3,13 @@
     height: calc(85% - 10px);
     padding: 15px 10px;
     overflow-y: auto;
+    color: var(--color-text);
 }
 
 .todo {
     list-style: none;
     padding: unset;
     margin: unset;
-}
-
-.section.dark .todo {
-    color: white;
 }
 
 .item {
@@ -27,6 +24,18 @@
     margin-bottom: 10px;
 }
 
-.item input:checked + span {
+.item input:checked + label {
     text-decoration-line: line-through;
+}
+
+.checkbox {
+    margin-right: 10px;
+    accent-color: white;
+}
+
+.trashcan {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    color: var(--color-text);
 }
