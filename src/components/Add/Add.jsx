@@ -17,11 +17,11 @@ export default function Add({ handleAdd }) {
     }
 
     return (
-        <section className={styles.section}>
+        // <section className={styles.section}>
             <form className={styles.add} onSubmit={handleSubmit}>
-                <input onChange={handleChange} className={styles.input} type="text" placeholder='Add Todo' value={input} />
-                <button className={styles.button}>Add</button>
+                <input onChange={handleChange} className={styles.input} type="text" placeholder='할 일 작성하기' value={input} />
+                <button className={styles.button}>추가</button>
             </form>
-        </section>
+        // </section>
     );
 }

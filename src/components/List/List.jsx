@@ -9,26 +9,28 @@ export default function List({ toDo, handleDelete, handleChecked, tab }) {
         else return true;
     })
 
-    const toDoList = filteredToDo.map((list) => {
-        const { title, checked, id } = list;
-
-        return (
-            <li key={ id } className={styles.item}>
-                <div>
+    return (
+      <section className={styles.section}>
+        <ul className={styles.todo}>
+          {
+            filteredToDo.map((list) => {
+              const { title, checked, id } = list;
+        
+              return (
+                <li key={ id } className={styles.item}>
+                  <div>
                     <input className={styles.checkbox} type='checkbox' id={id} onChange={() => handleChecked({ ...list, checked: !checked })} value={title} checked={checked} />
                     <label htmlFor={id}>{title}</label>
-                </div>
-                <button className={styles.trashcan} onClick={() => handleDelete(id)}>
+                  </div>
+                  <button className={styles.trashcan} onClick={() => handleDelete(id)}>
                     <FaRegTrashCan />
-                </button>
-            </li>
-        )
-    })
-
-    return (
-        <section className={styles.section}>
-            <ul className={styles.todo}>{toDoList}</ul>
-        </section>
+                  </button>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </section>
     );
 }
 

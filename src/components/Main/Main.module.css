@@ -1,4 +1,9 @@
 .main {
-    height: 339px;
+    height: calc(100% - 40px);
+    /* background-color: var(--color-main); */
     background-color: var(--color-main);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
 }

@@ -1,21 +1,33 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
-  --color-body-bg: beige;
+  /* --color-body-bg: beige; */
+  --color-body-bg: rgba(240, 240, 240);
   --color-header: hotpink;
-  --color-main: burlywood;
+  --color-main: white;
   --color-input-bg: darksalmon;
-  --color-input-add: white;
-  --color-text: black;
+  --color-text: #333;
   --color-button: rgba(240, 240, 240);
 }
 
 html.dark {
-  --color-body-bg: #5e7e9b;
+  /* --color-body-bg: #5e7e9b; */
+  --color-body-bg: #404040;
   --color-header: cadetblue;
-  --color-main: darkcyan;
+  --color-main: black;
   --color-input-bg: cornflowerblue;
-  --color-input-add: gray;
   --color-text: white;
-  --color-button: darkgrey;
+  --color-button: #404040;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular';
 }
 
 body {

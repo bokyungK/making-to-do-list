@@ -3,5 +3,5 @@
   height: 400px;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
