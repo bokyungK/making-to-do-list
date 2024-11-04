@@ -44,7 +44,7 @@
     - 프론트엔드 : 마크업부터 동적 개발까지 담당
 <br />
 
-## 💻  More about servic
+## 💻  More about service
 - 전체 페이지 마크업, 스타일링
 - useState를 사용한 to do list 등록, 삭제, 체크 기능 구현
 - 조건부 렌더링을 통한 전체, 진행중, 완료 여부 표시
